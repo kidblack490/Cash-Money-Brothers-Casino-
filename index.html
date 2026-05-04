@@ -1,0 +1,35 @@
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cash Money Brothers Gaming Inc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="margin:0;background:#000;color:#FFD700;font-family:Arial;text-align:center">
+
+<h1>Cash Money Brothers Gaming Inc</h1>
+<p>South Africa Demo Casino</p>
+
+<h2 id="balance">Balance: R10000</h2>
+
+<button onclick="play()" style="padding:15px;font-size:18px;background:#FFD700;color:#000;border:none;border-radius:10px">
+Play Demo Game
+</button>
+
+<script>
+let balance = 10000;
+
+function play(){
+  let win = Math.random() > 0.5;
+  balance += win ? 500 : -250;
+  document.getElementById("balance").innerText = "Balance: R" + balance;
+}
+</script>
+
+<p style="margin-top:50px;color:#aaa">
+18+ Demo Only • No Real Money
+</p>
+
+</body>
+</html>
